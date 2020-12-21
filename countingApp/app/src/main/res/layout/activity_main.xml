@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-68dp"
+        tools:layout_editor_absoluteY="33dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Edit1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_span="5"
+                android:text=""
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/Edit2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_span="5"
+                android:text=""
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="414dp"
+            android:layout_height="127dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:theme="@style/AppTheme.BlueRipple"
+                    android:text="0" />
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="1" />
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="2" />
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="3" />
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="4" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="6" />
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="7" />
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="8" />
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="9" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="더하기"
+                android:textSize="25dp"
+
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="빼기"
+                android:textSize="25dp"
+
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btnMul"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="곱하기"
+                android:textSize="25dp"
+                android:layout_margin="3dp"/>
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="나누기"
+                android:textSize="25dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계산결과 : "
+                android:textColor="#FF0000"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
