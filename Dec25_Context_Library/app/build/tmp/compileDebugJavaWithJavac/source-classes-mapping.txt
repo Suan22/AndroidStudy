@@ -1,0 +1,6 @@
+com/example/dec25_context_library/databinding/ActivityLibraryBinding.java
+ com.example.dec25_context_library.databinding.ActivityLibraryBinding
+com/example/dec25_context_library/databinding/ActivityMainBinding.java
+ com.example.dec25_context_library.databinding.ActivityMainBinding
+com/example/dec25_context_library/BuildConfig.java
+ com.example.dec25_context_library.BuildConfig

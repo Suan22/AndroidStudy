@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_Context_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_library.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_Context_Library\\app\\src\\main\\res\\layout\\activity_library.xml"
+    },
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_Context_Library\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_Context_Library\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

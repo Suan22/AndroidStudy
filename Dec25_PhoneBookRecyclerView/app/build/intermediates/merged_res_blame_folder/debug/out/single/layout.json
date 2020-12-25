@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_book_detail.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\src\\main\\res\\layout\\activity_phone_book_detail.xml"
+    },
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_book_recycler.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\src\\main\\res\\layout\\activity_phone_book_recycler.xml"
+    },
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\phonebook_item.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\src\\main\\res\\layout\\phonebook_item.xml"
+    },
+    {
+        "merged": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_phone_book.xml",
+        "source": "D:\\AndroidNewProject\\Dec25_PhoneBookRecyclerView\\app\\src\\main\\res\\layout\\activity_phone_book.xml"
+    }
+]
