@@ -1,9 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".captainIntent">
+    tools:context=".ironmanIntent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/sueflix" />
+
+    <kr.co.prnd.YouTubePlayerView
+        android:id="@+id/you_tube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:videoId="D4Z2nEdzkdc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:text="캡틴 아메리카: 윈터솔져"
+                android:textSize="31sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothicbold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="99% 일치"
+                    android:textColor="#56DF5B"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="2014"
+                    android:textColor="#8E8D8D"
+                    android:layout_marginLeft="15sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="2시간 15분"
+                    android:textColor="#8E8D8D"
+                    android:layout_marginLeft="10sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/playbutton"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="#DADADA"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="▶ 재생"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ⅴ 저장"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#2E2E2E"
+                    android:fontFamily="@font/nanumbarungothicbold" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="어벤져스의 뉴욕 사태를 겪은 후, 스티브 로저스는 워싱턴에 거주하면서 현대 사회에 적응하기 위해 애쓰고 있다. 그러던 중 쉴드 멤버가 공격을 당하는 사건이 벌어지고, 스티브는 세계를 위험에 빠뜨릴 위협에 말려든다. 또한 그들에게는 매우 위협적인 정체 불명의 적, 윈터 솔져가 존재함을 깨닫게 되는데.."
+                />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:textColor="#8E8D8D"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="출연 : 크리스 에반스, 스칼렛 요한슨, 사무엘 L. 잭슨, 로버트 레드포드"/>
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="10sp"
+                android:textColor="#8E8D8D"
+                android:text="감독 : 조 루소"
+                android:fontFamily="@font/nanumbarungothic"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="75dp"
+                android:layout_height="5dp"
+                android:background="#EE0B14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="비슷한 콘텐츠"
+                android:textSize="13sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumbarungothicbold"/>
+
+
+            <TableLayout
+                android:layout_width="370dp"
+                android:layout_height="550dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/drstrange_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/guardians_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/spiderman_right"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/thor_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/infinitywar_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/endgame_right" />
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

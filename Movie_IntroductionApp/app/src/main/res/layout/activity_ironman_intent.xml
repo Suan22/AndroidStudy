@@ -34,9 +34,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
                 android:text="아이언맨"
-                android:textSize="40sp"
-                android:textColor="@color/white"/>
+                android:textSize="34sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothicbold"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -46,40 +50,65 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
                         android:text="99% 일치"
-                        android:textColor="#07E10F"
-                        android:textSize="15sp"/>
+                        android:textColor="#56DF5B"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/nanumbarungothicbold"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
                         android:text="2020"
                         android:textColor="#8E8D8D"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15sp"
+                        android:fontFamily="@font/nanumbarungothicbold"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="13sp"
                         android:text="2시간 5분"
                         android:textColor="#8E8D8D"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginLeft="10sp"
+                        android:fontFamily="@font/nanumbarungothicbold"/>
                 </LinearLayout>
-            <Button
-                android:layout_width="380dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="재생"
-                android:textSize="18dp"
-                android:textColor="@color/black"
-                android:backgroundTint="#DADADA"
-                android:layout_marginTop="15dp"/>
-            <Button
-                android:layout_width="380dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="저장"
-                android:textSize="18dp"
-                android:textColor="@color/white"
-                android:backgroundTint="#2E2E2E"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:gravity="center_horizontal">
+
+                <Button
+                        android:id="@+id/playbutton"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:backgroundTint="#DADADA"
+                        android:fontFamily="@font/nanumbarungothicbold"
+                        android:text="▶ 재생"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/savebutton"
+                        android:layout_width="380dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="ⅴ 저장"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="#2E2E2E"
+                        android:fontFamily="@font/nanumbarungothicbold" />
+
+
+            </RelativeLayout>
+
+
 
             <TextView
                 android:layout_width="365dp"
@@ -88,6 +117,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="13sp"
                 android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothic"
                 android:text="억만장자 CEO이자 천재 발명가인 토니 스타크는 아프가니스탄에서 납치되어 무기를 만들 것을 강요당하지만, 독창적인 철갑 무장 슈트를 만들어 탈출한 뒤 악에 맞서 싸우기로 다짐한다."
                 />
             <TextView
@@ -97,6 +127,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="10sp"
                 android:textColor="#8E8D8D"
+                android:fontFamily="@font/nanumbarungothic"
                 android:text="출연 : 로버트 다우니 주니어, 기네스 팰트로우, 터렌스 하워드, 제프 브리지스"/>
             <TextView
                 android:layout_width="365dp"
@@ -104,21 +135,31 @@
                 android:layout_marginLeft="8dp"
                 android:textSize="10sp"
                 android:textColor="#8E8D8D"
-                android:text="감독 : 존 파브로"/>
+                android:text="감독 : 존 파브로"
+                android:fontFamily="@font/nanumbarungothic"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="75dp"
+                android:layout_height="5dp"
+                android:background="#EE0B14"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
                 android:text="비슷한 콘텐츠"
                 android:textSize="13sp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumbarungothicbold"/>
 
 
             <TableLayout
-                android:layout_width="360dp"
-                android:layout_height="540dp"
+                android:layout_width="370dp"
+                android:layout_height="550dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 

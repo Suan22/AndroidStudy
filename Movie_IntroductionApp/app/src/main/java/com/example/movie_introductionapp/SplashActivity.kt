@@ -9,7 +9,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SystemClock.sleep(300)
-        val intent = Intent(this,SubActivity::class.java)
+        val intent = Intent(this,selectActivity::class.java)
         startActivity(intent)
         finish()
 

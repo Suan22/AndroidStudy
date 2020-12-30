@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Movie_IntroductionApp">
-        <activity android:name=".captainIntent"></activity>
+        <activity android:name=".selectActivity"></activity>
+        <activity android:name=".endgameIntent" />
+        <activity android:name=".infinitywarIntent" />
+        <activity android:name=".thorIntent" />
+        <activity android:name=".spidermanIntent" />
+        <activity android:name=".guardiansIntent" />
+        <activity android:name=".drstrangeIntent" />
+        <activity android:name=".civilwarIntent" />
+        <activity android:name=".captainIntent" />
         <activity android:name=".ironmanIntent" />
         <activity
             android:name=".SplashActivity"

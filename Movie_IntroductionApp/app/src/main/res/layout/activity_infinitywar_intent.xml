@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ironmanIntent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/sueflix" />
+
+    <kr.co.prnd.YouTubePlayerView
+        android:id="@+id/you_tube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:videoId="xUDhdCsLkjU" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:text="어벤져스: 인피니티 워"
+                android:textSize="31sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothicbold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="99% 일치"
+                    android:textColor="#56DF5B"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="2018"
+                    android:textColor="#8E8D8D"
+                    android:layout_marginLeft="15sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="2시간 30분"
+                    android:textColor="#8E8D8D"
+                    android:layout_marginLeft="10sp"
+                    android:fontFamily="@font/nanumbarungothicbold"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/playbutton"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:backgroundTint="#DADADA"
+                    android:fontFamily="@font/nanumbarungothicbold"
+                    android:text="▶ 재생"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/savebutton"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="ⅴ 저장"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#2E2E2E"
+                    android:fontFamily="@font/nanumbarungothicbold" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="어벤져스와 타노스 사이의 압도적인 무한 전쟁! 우주를 관장할 수 있는 힘을 가진 인피니티 스톤을 모아 인피니티 건틀렛을 완성하려는 빌런 타노스와, 그를 막아야 하는 어벤져스 사이의 피할 수 없는 대결이 펼쳐진다. 새로운 조합을 이룬 어벤져스, 역대 최강 빌런 타노스에 맞서 세계의 운명이 걸린 인피니티 스톤을 향한 무한 대결!"
+                />
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10sp"
+                android:textColor="#8E8D8D"
+                android:fontFamily="@font/nanumbarungothic"
+                android:text="출연 : 로버트 다우니 주니어, 크리스 헴스워스, 마크 러팔로, 크리스 에반스, 스칼렛 요한슨, 돈 치들, 베네딕트 컴버배치, 톰 홀랜드, 채드윅 보스만, 조 샐다나, 카렌 길런, 톰 히들스턴, 폴 베타니, 엘리자베스 올슨, 안소니 마키, 세바스찬 스탠, 이드리스 알바, 다나이 구리아, 피터 딘클리지, 베네딕트 웡, 폼 클레멘티에프, 크리스 프랫, 스탠 리, 스티븐 맥필리"/>
+            <TextView
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="10sp"
+                android:textColor="#8E8D8D"
+                android:text="감독 : 안소니 루소, 조 루소"
+                android:fontFamily="@font/nanumbarungothic"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="75dp"
+                android:layout_height="5dp"
+                android:background="#EE0B14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="비슷한 콘텐츠"
+                android:textSize="13sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumbarungothicbold"/>
+
+
+            <TableLayout
+                android:layout_width="370dp"
+                android:layout_height="550dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:visibility="visible"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ironman_right"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/captain_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/civilwar_right"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/drstrange_right"
+                        android:layout_marginRight="5dp"/>
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/guardians_right" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="120dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/spiderman_right"
+                        android:layout_marginLeft="4dp"/>
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
