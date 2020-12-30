@@ -4,141 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical"
     android:stretchColumns="*"
     tools:context=".SubActivity">
 
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:gravity="center"
-        android:text="MovieApp"
-        android:layout_marginTop="10dp"
-        android:textSize="40sp"
-        android:background="#FFFFFF" />
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/sueflix" />
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:src="@drawable/realmarvellogo" />
-
-    <Button
-        android:id="@+id/Toast_btn"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left" />
+        android:layout_width="132dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/marvel_white" />
 
     <TableLayout
-        android:layout_width="350dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_width="360dp"
+        android:layout_height="540dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="0dp">
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:visibility="visible"
+                android:src="@drawable/ironman_right"
+                 />
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/captain_right" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/civilwar_right"
+                />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="50dp">
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="7" />
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/drstrange_right" />
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="8" />
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/guardians_right" />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="9" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="-"
-                android:backgroundTint="#A6A5A5"/>
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/spiderman_right"/>
         </TableRow>
-
 
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="50dp">
 
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="7" />
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/thor_right" />
 
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="8" />
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/infinitywar_right" />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="9" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textSize="30dp"
-                android:text="-"
-                android:backgroundTint="#A6A5A5"/>
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/endgame_right" />
         </TableRow>
-
-
     </TableLayout>
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
-
-
 </LinearLayout>
