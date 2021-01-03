@@ -25,7 +25,6 @@ class Resource : AppCompatActivity() {
         val color = getColor(R.color.text_view)
         Log.d("mentt","color : "+color)
 
-        binding.btn1.setBackgroundColor(getColor(R.color.mycolor))
 
     }
 }
