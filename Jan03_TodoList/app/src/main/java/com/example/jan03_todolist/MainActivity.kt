@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        data.add(Todo("인생", false))
+        data.add(Todo("인생", false)) // 데이터 샘플
         data.add(Todo("그만살래잉", false))
 
         /*
