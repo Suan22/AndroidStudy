@@ -41,13 +41,7 @@ class MainActivity2 : AppCompatActivity() {
 
         }
 
-
-        calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
-            // todo
-            year = 2019
-            month = 5
-            dayOfMonth=5
-        }
+        
 
 
 
