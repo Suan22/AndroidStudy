@@ -1,24 +1,25 @@
 package com.example.jan04_mytodolist
-
 import android.R
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main2.*
+import com.example.jan04_mytodolist.databinding.ActivityMain3Binding
+import kotlinx.android.synthetic.main.activity_main3.*
 import java.io.FileInputStream
 import java.io.FileOutputStream
 
 
 @Suppress("UNUSED_VALUE")
-class MainActivity2 : AppCompatActivity() {
+class MainActivity3 : AppCompatActivity() {
 
     var fname: String = ""
     var str: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_item)
+        val binding = ActivityMain3Binding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
 
@@ -41,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
 
         }
 
-        
+
 
 
 
