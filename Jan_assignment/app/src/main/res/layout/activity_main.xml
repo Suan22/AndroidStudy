@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-     <org.jetbrains.anko._GridView
-         android:id="@+id/gridview"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"/>
+
+ <GridView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+      android:id="@+id/gridview"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

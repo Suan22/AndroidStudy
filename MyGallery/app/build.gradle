@@ -9,7 +9,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.jan_assignment"
+        applicationId "com.example.mygallery"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -31,10 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
     buildFeatures {
-        viewBinding = true
+        viewBinding true
     }
+
 }
 
 dependencies {
@@ -43,11 +43,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    /* 이미지 로드의 편의성과, 개발의 편의성을 위해 Glide와 Anko 라이브러리 의존성 추가*/
-    implementation 'org.jetbrains.anko:anko:0.10.5'
     implementation "org.jetbrains.anko:anko:$anko_version"
     implementation 'com.github.bumptech.glide:glide:4.11.0'
 
