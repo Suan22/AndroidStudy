@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
 
                 fragments.add(PhotoFragment.newInstance(contentUri))
             }
-            //    query.close()  // 이 객체를 더 이상 사용하지 않으므로 닫아줘야 함 (메모리 누수 방지)
+             //   query.close()  // 이 객체를 더 이상 사용하지 않으므로 닫아줘야 함 (메모리 누수 방지)
         }
 
         val adapter = MyPagerAdapter1(supportFragmentManager)

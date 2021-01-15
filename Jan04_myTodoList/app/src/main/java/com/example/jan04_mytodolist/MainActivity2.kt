@@ -5,6 +5,8 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jan04_mytodolist.databinding.ActivityMain2Binding
+import com.example.jan04_mytodolist.databinding.ActivityMain3Binding
 import kotlinx.android.synthetic.main.activity_main2.*
 import java.io.FileInputStream
 import java.io.FileOutputStream
@@ -18,7 +20,8 @@ class MainActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_item)
+        val binding = ActivityMain2Binding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
 
@@ -32,30 +35,30 @@ class MainActivity2 : AppCompatActivity() {
             cha_Btn.visibility = View.INVISIBLE // 수정 Button이 Invisible
             del_Btn.visibility = View.INVISIBLE // 삭제 Button이 Invisible
 
-            diaryTextView.text = String.format("%d / %d / %d", year, month + 1, dayOfMonth)
+            binding.diaryTextView.text = String.format("%d / %d / %d", year, month + 1, dayOfMonth)
 // 날짜를 보여주는 텍스트에 해당 날짜를 넣는다.
-            contextEditText.setText("") // EditText에 공백값 넣기
+            binding.contextEditText.setText("") // EditText에 공백값 넣기
 
             checkedDay(year, month, dayOfMonth) // checkedDay 메소드 호출
 
 
         }
 
-        
 
 
 
 
-        save_Btn.setOnClickListener { // 저장 Button이 클릭되면
+
+        binding.saveBtn.setOnClickListener { // 저장 Button이 클릭되면
             saveDiary(fname) // saveDiary 메소드 호출
-            str = contextEditText.getText().toString() // str 변수에 edittext내용을 toString
+            str = binding.contextEditText.getText().toString() // str 변수에 edittext내용을 toString
 //형으로 저장
-            textView2.text = "${str}" // textView에 str 출력
-            save_Btn.visibility = View.INVISIBLE
-            cha_Btn.visibility = View.VISIBLE
-            del_Btn.visibility = View.VISIBLE
-            contextEditText.visibility = View.INVISIBLE
-            textView2.visibility = View.VISIBLE
+            binding.textView2.text = "${str}" // textView에 str 출력
+            binding.saveBtn.visibility = View.INVISIBLE
+            binding.chaBtn.visibility = View.VISIBLE
+            binding.delBtn.visibility = View.VISIBLE
+            binding.contextEditText.visibility = View.INVISIBLE
+            binding.textView2.visibility = View.VISIBLE
         }
     }
 

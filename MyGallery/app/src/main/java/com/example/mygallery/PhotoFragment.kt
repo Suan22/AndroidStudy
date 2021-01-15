@@ -16,7 +16,6 @@ private const val ARG_URI = "uri"  // 클래스 밖에서 상수를 정의하면
 class PhotoFragment : Fragment() {
     private lateinit var uri:Uri
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.getParcelable<Uri>(ARG_URI)?.let {

@@ -106,16 +106,18 @@
                     android:textSize="30dp"
                     android:gravity="center"
                     android:background="#C8C9DC"/>
+
                 <TextView
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginBottom="3dp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginBottom="3dp"
                     android:layout_weight="1"
-                    android:text="정승훈"
-                    android:textSize="30dp"
+                    android:background="#C8C9DC"
                     android:gravity="center"
-                    android:background="#C8C9DC"/>
+                    android:text="정승훈"
+                    android:textSize="30dp" />
+
                 <TextView
                     android:layout_marginLeft="2dp"
                     android:layout_marginBottom="3dp"
