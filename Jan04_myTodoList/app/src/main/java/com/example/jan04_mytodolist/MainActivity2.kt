@@ -1,12 +1,10 @@
 package com.example.jan04_mytodolist
 
-import android.R
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.jan04_mytodolist.databinding.ActivityMain2Binding
-import com.example.jan04_mytodolist.databinding.ActivityMain3Binding
 import kotlinx.android.synthetic.main.activity_main2.*
 import java.io.FileInputStream
 import java.io.FileOutputStream
@@ -29,11 +27,11 @@ class MainActivity2 : AppCompatActivity() {
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
 // 달력 날짜가 선택되면
             diaryTextView.visibility = View.VISIBLE // 해당 날짜가 뜨는 textView가 Visible
-            save_Btn.visibility = View.VISIBLE // 저장 버튼이 Visible
+            saveBtn.visibility = View.VISIBLE // 저장 버튼이 Visible
             contextEditText.visibility = View.VISIBLE // EditText가 Visible
             textView2.visibility = View.INVISIBLE // 저장된 일기 textView가 Invisible
-            cha_Btn.visibility = View.INVISIBLE // 수정 Button이 Invisible
-            del_Btn.visibility = View.INVISIBLE // 삭제 Button이 Invisible
+            chaBtn.visibility = View.INVISIBLE // 수정 Button이 Invisible
+            delBtn.visibility = View.INVISIBLE // 삭제 Button이 Invisible
 
             binding.diaryTextView.text = String.format("%d / %d / %d", year, month + 1, dayOfMonth)
 // 날짜를 보여주는 텍스트에 해당 날짜를 넣는다.
@@ -81,37 +79,37 @@ class MainActivity2 : AppCompatActivity() {
             textView2.visibility = View.VISIBLE
             textView2.text = "${str}" // textView에 str 출력
 
-            save_Btn.visibility = View.INVISIBLE
-            cha_Btn.visibility = View.VISIBLE
-            del_Btn.visibility = View.VISIBLE
+            saveBtn.visibility = View.INVISIBLE
+            chaBtn.visibility = View.VISIBLE
+            delBtn.visibility = View.VISIBLE
 
-            cha_Btn.setOnClickListener { // 수정 버튼을 누를 시
+            chaBtn.setOnClickListener { // 수정 버튼을 누를 시
                 contextEditText.visibility = View.VISIBLE
                 textView2.visibility = View.INVISIBLE
                 contextEditText.setText(str) // editText에 textView에 저장된
 // 내용을 출력
-                save_Btn.visibility = View.VISIBLE
-                cha_Btn.visibility = View.INVISIBLE
-                del_Btn.visibility = View.INVISIBLE
+                saveBtn.visibility = View.VISIBLE
+                chaBtn.visibility = View.INVISIBLE
+                delBtn.visibility = View.INVISIBLE
                 textView2.text = "${contextEditText.getText()}"
             }
 
-            del_Btn.setOnClickListener {
+            delBtn.setOnClickListener {
                 textView2.visibility = View.INVISIBLE
                 contextEditText.setText("")
                 contextEditText.visibility = View.VISIBLE
-                save_Btn.visibility = View.VISIBLE
-                cha_Btn.visibility = View.INVISIBLE
-                del_Btn.visibility = View.INVISIBLE
+                saveBtn.visibility = View.VISIBLE
+                chaBtn.visibility = View.INVISIBLE
+                delBtn.visibility = View.INVISIBLE
                 removeDiary(fname)
             }
 
             if (textView2.getText() == "") {
                 textView2.visibility = View.INVISIBLE
                 diaryTextView.visibility = View.VISIBLE
-                save_Btn.visibility = View.VISIBLE
-                cha_Btn.visibility = View.INVISIBLE
-                del_Btn.visibility = View.INVISIBLE
+                saveBtn.visibility = View.VISIBLE
+                chaBtn.visibility = View.INVISIBLE
+                delBtn.visibility = View.INVISIBLE
                 contextEditText.visibility = View.VISIBLE
             }
 

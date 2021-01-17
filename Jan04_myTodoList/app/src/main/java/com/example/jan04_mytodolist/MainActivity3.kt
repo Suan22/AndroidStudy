@@ -45,7 +45,6 @@ class MainActivity3 : AppCompatActivity() {
 
 
 
-
         binding.saveBtn.setOnClickListener { // 저장 Button이 클릭되면
             saveDiary(fname) // saveDiary 메소드 호출
             str = binding.contextEditText.getText().toString() // str 변수에 edittext내용을 toString
