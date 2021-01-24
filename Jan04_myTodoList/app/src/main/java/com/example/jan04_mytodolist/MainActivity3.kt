@@ -34,7 +34,7 @@ class MainActivity3 : AppCompatActivity() {
 
             binding.diaryTextView.text = String.format("%d / %d / %d", year, month + 1, dayOfMonth)
 // 날짜를 보여주는 텍스트에 해당 날짜를 넣는다.
-            binding.contextEditText.setText(App.prefs.myEditText) // EditText에 공백값 넣기
+            binding.contextEditText.setText("") // EditText에 공백값 넣기
 
             checkedDay(year, month, dayOfMonth) // checkedDay 메소드 호출
 
@@ -46,8 +46,7 @@ class MainActivity3 : AppCompatActivity() {
 
 
         binding.saveBtn.setOnClickListener { // 저장 Button이 클릭되면
-            //saveDiary(fname) // saveDiary 메소드 호출
-            App.prefs.myEditText=binding.saveBtn.text.toString()
+            saveDiary(fname) // saveDiary 메소드 호출
             str = binding.contextEditText.getText().toString() // str 변수에 edittext내용을 toString
 //형으로 저장
             binding.textView2.text = "${str}" // textView에 str 출력
@@ -120,7 +119,6 @@ class MainActivity3 : AppCompatActivity() {
     }
 
 
-     /*
 
     @SuppressLint("WrongConstant")
     fun saveDiary(readyDay: String) {
@@ -155,7 +153,7 @@ class MainActivity3 : AppCompatActivity() {
     }
 
 
-      */
+
 
 
 }
